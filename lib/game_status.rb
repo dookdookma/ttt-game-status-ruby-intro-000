@@ -38,5 +38,5 @@ def over?(board)
 end
 
 def winner(board)
-  WIN_COMBINATIONS.detect{|token| token == "X" || token == "O"}
+  won?(board)
 end
