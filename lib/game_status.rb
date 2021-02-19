@@ -38,8 +38,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
-  WIN_COMBINATIONS.detect do |combo|
-    board[combo[0[0]]]
+  won?(board[0])
   end
 end
