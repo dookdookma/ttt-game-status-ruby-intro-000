@@ -39,3 +39,4 @@ end
 
 def winner(board)
   WIN_COMBINATIONS.detect{|token| token == "X" || token == "O"}
+end
