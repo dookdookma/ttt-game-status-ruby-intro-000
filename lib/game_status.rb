@@ -21,3 +21,8 @@ def won?(board)
       position_taken?(board, combo[0])
     end
 end
+
+def full?(board)
+  none_empty = board.none? do |mark|
+    !(board[mark] == " " || board[mark] == "")
+  end
