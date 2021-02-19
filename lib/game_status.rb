@@ -23,9 +23,6 @@ def won?(board)
 end
 
 def full?(board)
-  none_empty = true
-  board.none? do |mark|
-    if (board[mark] == " " || board[mark] == "")
-    none_empty = false
-  end
+  position_taken?(board, index).all?
+end
 end
