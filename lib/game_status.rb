@@ -25,4 +25,3 @@ end
 def full?(board)
   position_taken?(board, index).all?
 end
-end
