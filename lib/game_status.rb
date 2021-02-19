@@ -39,6 +39,6 @@ end
 
 def winner(board)
   WIN_COMBINATIONS.detect do |token|
-    board[token[0[0]]] == "X" || board[token[0[0]]] == "O"
+    board[token[0[][0]] == "X" || board[token[0[][0]] == "O"
   end
 end
