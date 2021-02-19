@@ -38,7 +38,5 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    puts won?board[0]
-  end
+  won?(board).detect{|token| token == "X" || token == "O"}
 end
