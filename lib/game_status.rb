@@ -33,6 +33,6 @@ end
 
 def over?(board)
   won?(board)
-  full?(board)
   draw?(board)
+  full?(board)
 end
