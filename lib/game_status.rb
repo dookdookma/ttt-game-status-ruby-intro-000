@@ -26,3 +26,4 @@ def full?(board)
   none_empty = board.none? do |mark|
     !(board[mark] == " " || board[mark] == "")
   end
+end
