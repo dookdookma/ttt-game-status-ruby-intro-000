@@ -23,8 +23,9 @@ def won?(board)
 end
 
 def full?(board)
-  none_empty = board.none? do |mark|
-    board[mark] == " " || board[mark] == ""
-    none_empty = true
+  none_empty = true
+  board.none? do |mark|
+    if board[mark] == " " || board[mark] == ""
+    none_empty = false
   end
 end
