@@ -37,6 +37,6 @@ def over?(board)
   full?(board)
 end
 
-def winner?(board)
+def winner(board)
   WIN_COMBINATIONS.detect{|combo| combo.is_a?("X") || combo.is_a?("O")}
 end
