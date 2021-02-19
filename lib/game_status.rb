@@ -38,5 +38,6 @@ def over?(board)
 end
 
 def winner(board)
-  board[won?(board)].detect{|token| token == "X" || token == "O"}
+  if token = won?(board)
+    board[token.first]
 end
