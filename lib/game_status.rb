@@ -40,4 +40,5 @@ end
 def winner(board)
   if token = won?(board)
     board[token.first]
+  end
 end
