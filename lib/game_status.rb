@@ -28,5 +28,5 @@ end
 
 def draw?(board)
   board.all?{|token| token == "X" || token == "O"}
-  !won?
+  !(won?(board))
 end
