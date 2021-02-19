@@ -38,5 +38,5 @@ def over?(board)
 end
 
 def winner?(board)
-  WIN_COMBINATIONS.detect{combo[0,1,2] combo.is_a?("X") || combo.is_a?("O")}
+  WIN_COMBINATIONS.detect{|combo[0,1,2]| combo.is_a?("X") || combo.is_a?("O")}
 end
