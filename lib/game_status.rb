@@ -43,3 +43,4 @@ def winner?(board)
     board[combo[1]] == board[combo[2]] &&
     position_taken?(board, combo["X"])
   end
+end
